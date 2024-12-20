@@ -1,0 +1,99 @@
+$screen-xs: 360px;
+$stopSlider: 554.98px;
+$screen-md: 767.98px;
+//$screen-lg: 1119.98px;
+$screen-lg: 1439.98px;
+$screen-xl: 1439.98px;
+$bgColor: #f8f8f8;
+$bgColorAlt1: #ff3e79;
+$text: #000;
+$textAlt1: #7e7e82;
+$textAlt2: #a2a2a5;
+
+@font-face {
+  font-family: 'TT Lakes';
+  src: url('../fonts/TTLakes-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: none;
+}
+
+@font-face {
+  font-family: 'TT Lakes';
+  src: url('../fonts/TTLakes-Bold.ttf') format('truetype');
+  font-weight: 900;
+  font-style: none;
+}
+
+@font-face {
+  font-family: 'TT Lakes';
+  src: url('../fonts/TTLakes-Medium.ttf') format('truetype');
+  font-weight: 700;
+  font-style: none;
+}
+
+* {
+  scrollbar-color: $textAlt2 transparent;
+  scrollbar-width: thin;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'TT Lakes';
+  background-color: $bgColor;
+  color: $text;
+
+  @media (min-width: $screen-lg) {
+    display: flex;
+  }
+}
+
+button {
+  padding: 0;
+  margin: 0;
+  background-color: transparent;
+  border: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+@import '../blocks/header/header.scss';
+@import '../blocks/upper-menu/upper-menu.scss';
+@import '../blocks/content/content.scss';
+@import '../blocks/pages/pages.scss';
+@import '../blocks/info/info.scss';
+@import '../blocks/read-more/read-more.scss';
+@import '../blocks/slider-list/slider-list.scss';
+@import '../blocks/list/list.scss';
+@import '../blocks/brand/brand.scss';
+@import '../blocks/menu/menu.scss';
+@import '../blocks/menu-header/menu-header.scss';
+@import '../blocks/icon/icon.scss';
+@import '../blocks/menu-footer/menu-footer.scss';
+@import '../blocks/contact/contact.scss';
+@import '../blocks/lang/lang.scss';
+@import '../blocks/slider/slider.scss';
+@import '../blocks/list-of-brands/list-of-brands.scss';
+@import '../blocks/contact-buttons/contact-buttons.scss';
+@import '../blocks/circle-list/circle-list.scss';
+@import '../blocks/button/button.scss';
+@import '../blocks/menu-background/menu-background.scss';
+@import '../blocks/read-more-icon/read-more-icon.scss';
+@import '../blocks/header-title/header-title.scss';
+@import '../blocks/tech-type/tech-type.scss';
+@import '../blocks/price/price.scss';
+@import '../blocks/external-message/external-message.scss';
+@import '../blocks/commercial-offer/commercial-offer.scss';
+@import '../blocks/footer/footer.scss';
+@import '../blocks/list-of-price/list-of-price.scss';
+@import '../blocks/slider-list-price/slider-list-price.scss';
+@import '../blocks/wrapper/wrapper.scss';
+@import '../blocks/navigation/navigation.scss';
+@import '../blocks/list-of-tech/list-of-tech.scss';
+@import '../blocks/more-icon/more-icon.scss';
+@import '../blocks/menu-phone/menu-phone.scss';
+@import '../blocks/menu-background-modal/menu-background-modal.scss';
+@import '../blocks/phone-modal-block/phone-modal-block.scss';

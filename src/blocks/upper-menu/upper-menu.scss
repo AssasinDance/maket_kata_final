@@ -1,0 +1,202 @@
+.upper-menu {
+  @media (max-width: $screen-lg) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    height: 88px;
+  }
+
+  @media (max-width: $screen-xs) {
+    gap: 30px;
+  }
+
+  @media (min-width: $screen-lg) {
+    display: none;
+  }
+
+  &--size--lg {
+    display: flex;
+    justify-content: space-between;
+    text-wrap: nowrap;
+    width: calc(100vw - 40px);
+  }
+
+  &__repair--size--lg {
+    @media (max-width: $screen-lg) {
+      display: none;
+    }
+  }
+
+  &__status--size--lg {
+    @media (max-width: $screen-lg) {
+      display: none;
+    }
+  }
+
+  &__burger {
+    @media (max-width: $screen-lg) {
+      background-image: url('../img/burger.svg');
+    }
+  }
+
+  &__logo {
+    @media (max-width: $screen-lg) {
+      height: 51px;
+      width: 97px;
+      position: relative;
+      bottom: 6px;
+    }
+
+    @media (min-width: $screen-xs) and (max-width: $screen-lg) {
+      margin-left: 15px;
+    }
+
+    @media (min-width: $screen-lg) {
+      display: none;
+    }
+  }
+
+  &__logo::before {
+    @media (min-width: $screen-xs) and (max-width: $screen-lg) {
+      content: '';
+      height: 32px;
+      width: 2px;
+      position: absolute;
+      display: block;
+      background-color: #eaeaea;
+      border-radius: 1px;
+      margin: 10px 0 0 -15px;
+    }
+  }
+
+  &__call {
+    @media (max-width: $screen-lg) {
+      background-image: url('../img/call.svg');
+    }
+
+    @media (max-width: 500px) {
+      display: none;
+    }
+  }
+
+  &__chat {
+    @media (max-width: $screen-lg) {
+      background-image: url('../img/chat.svg');
+    }
+
+    @media (max-width: 500px) {
+      display: none;
+    }
+  }
+
+  &__profile {
+    @media (max-width: $screen-lg) {
+      background-image: url('../img/profile.svg');
+      margin-right: 15px;
+    }
+
+    @media (max-width: 500px) {
+      display: none;
+    }
+  }
+
+  &__status-button {
+    @media (max-width: $screen-lg) {
+      background-image: url('../img/checkstatus.svg');
+    }
+
+    @media (min-width: $screen-lg) {
+      background-image: url('../img/checkstatus-lg.svg');
+      height: 40px;
+      width: 40px;
+      margin-left: 10px;
+    }
+  }
+
+  &__repair-button {
+    @media (max-width: $screen-lg) {
+      background-image: url('../img/repair.svg');
+    }
+
+    @media (min-width: $screen-lg) {
+      background-image: url('../img/repair-lg.svg');
+      height: 40px;
+      width: 40px;
+      margin-left: 10px;
+    }
+  }
+
+  &__repair::before {
+    @media (max-width: $screen-lg) {
+      content: '';
+      height: 32px;
+      width: 2px;
+      position: absolute;
+      display: block;
+      background-color: #eaeaea;
+      border-radius: 1px;
+      margin: 5px 0 0 -15px;
+    }
+  }
+
+  &__left-side {
+    @media (max-width: $screen-lg) {
+      background-color: white;
+      display: flex;
+      gap: 15px;
+      align-items: center;
+    }
+  }
+
+  &__right-side {
+    @media (max-width: $screen-lg) {
+      background-color: white;
+      display: flex;
+      gap: 15px;
+      align-items: center;
+    }
+
+    @media (min-width: $screen-lg) {
+      background-color: $bgColor;
+      display: flex;
+      gap: 15px;
+      align-items: center;
+    }
+  }
+
+  &__right-side_lg {
+    display: flex;
+    gap: 150px;
+    margin-right: 75px;
+  }
+
+  &__button-description {
+    font-family: 'TT Lakes Medium';
+    display: block;
+    position: relative;
+    right: 120px;
+    width: 120px;
+    height: 40px;
+    align-content: center;
+  }
+
+  &__item {
+    @media (max-width: $screen-lg) {
+      background-repeat: no-repeat;
+      height: 40px;
+      width: 40px;
+    }
+
+    @media (min-width: $screen-lg) {
+      background-repeat: no-repeat;
+      height: 40px;
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  &__logo-link {
+    background-color: white;
+  }
+}

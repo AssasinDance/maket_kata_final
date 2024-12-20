@@ -1,0 +1,20 @@
+.menu-header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 24px;
+  gap: 16px;
+
+  &__burger {
+    background: url('../img/burger-cross.svg') no-repeat;
+
+    @media (min-width: $screen-lg) {
+      display: none;
+    }
+  }
+
+  &__search {
+    background: url('../img/search.svg') no-repeat;
+    margin-left: auto;
+  }
+}

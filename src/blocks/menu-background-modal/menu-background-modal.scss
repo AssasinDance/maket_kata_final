@@ -1,0 +1,13 @@
+.menu-background-modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: transparent;
+  transition: opacity 0.3s;
+  display: none;
+  opacity: 0;
+  z-index: 99;
+  backdrop-filter: blur(5px);
+}

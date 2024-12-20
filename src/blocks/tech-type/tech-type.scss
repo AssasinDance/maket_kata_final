@@ -1,0 +1,57 @@
+.tech-type {
+  height: 160px;
+  width: 210px;
+  flex-shrink: 0;
+  background-color: #ffffff;
+  border-radius: 6px;
+  border: 1px #eaeaea solid;
+  display: flex;
+  align-content: flex-end;
+  justify-content: space-between;
+  padding: 10px 16px;
+
+  &__logo {
+    max-width: 50%;
+    object-fit: contain;
+  }
+
+  &__more {
+    display: inline-block;
+    background-image: url('../img/go.svg');
+    width: 40px;
+    height: 40px;
+    align-self: flex-end;
+    flex-shrink: 0;
+  }
+  /*
+  &--hidden-md {
+    @media (min-width: $stopSlider) {
+      display: none;
+    }
+
+    @media (min-width: 800px) {
+      display: flex;
+    }
+  }
+
+  &--hidden-lg {
+    @media (min-width: $screen-md) {
+      display: none;
+    }
+
+    @media (min-width: $screen-lg) {
+      display: flex;
+    }
+  }
+
+  &--hidden-xl {
+    @media (min-width: $screen-lg) {
+      display: none;
+    }
+
+    @media (min-width: $screen-xl) {
+      display: flex;
+    }
+  }
+    */
+}

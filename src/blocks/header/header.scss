@@ -1,0 +1,8 @@
+.header {
+  &__upper-menu {
+    @media (max-width: $screen-lg) {
+      border-bottom: solid 1px #b8ffec;
+      padding: 0 15px;
+    }
+  }
+}

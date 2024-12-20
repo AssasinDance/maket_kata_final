@@ -1,0 +1,27 @@
+.brand {
+  height: 52px;
+  width: 210px;
+  flex-shrink: 0;
+  background-color: #ffffff;
+  border-radius: 6px;
+  border: 1px #eaeaea solid;
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+  padding: 10px 16px;
+
+  &__logo {
+    max-width: 50%;
+    object-fit: contain;
+    -webkit-user-drag: none;
+    user-select: none;
+  }
+
+  &__more {
+    display: inline-block;
+    background-image: url('../img/go.svg');
+    width: 40px;
+    height: 40px;
+    align-self: center;
+  }
+}

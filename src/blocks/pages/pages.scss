@@ -1,0 +1,45 @@
+.pages {
+  display: flex;
+  width: calc(100vw - 20px);
+  gap: 15px;
+  list-style: none;
+  scrollbar-color: transparent transparent;
+
+  @media (max-width: $screen-lg) {
+    -webkit-overflow-scrolling: touch;
+    overflow-x: scroll;
+  }
+
+  @media (min-width: $screen-lg) {
+    flex-wrap: wrap;
+    width: auto;
+  }
+
+  &__item {
+    text-wrap: nowrap;
+    font-size: 16px;
+  }
+
+  &__link {
+    display: block;
+    padding: 5px;
+  }
+
+  &__item:last-child {
+    @media (max-width: $screen-lg) {
+      margin-right: 30px;
+    }
+  }
+
+  &__item:first-child {
+    @media (max-width: $screen-lg) {
+      margin-left: 15px;
+    }
+  }
+
+  &__link--active {
+    background-color: white;
+    border-radius: 6px;
+    border: 2px solid #b8ffec;
+  }
+}

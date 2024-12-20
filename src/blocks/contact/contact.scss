@@ -1,0 +1,15 @@
+.contact {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  &__phone {
+    font-size: 24px;
+    line-height: 32px;
+    font-family: 'TT Lakes Bold';
+  }
+
+  &__email {
+    font-family: 'TT Lakes Medium';
+  }
+}

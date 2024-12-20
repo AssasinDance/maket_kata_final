@@ -1,0 +1,33 @@
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  &__link {
+    display: inline-block;
+    padding: 16px 24px;
+  }
+
+  &__link:hover {
+    text-decoration: underline;
+  }
+
+  &__link--current {
+    color: #7e7e82;
+  }
+
+  &__link--current:hover {
+    text-decoration: none;
+  }
+
+  &__link--current::before {
+    content: '';
+    position: absolute;
+    height: 30px;
+    width: 4px;
+    border-radius: 0 50% 50% 0;
+    background-color: #41f6d7;
+    left: 0;
+    transform: translateY(-4px);
+  }
+}

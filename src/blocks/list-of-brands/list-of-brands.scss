@@ -1,0 +1,26 @@
+.list-of-brands {
+  display: flex;
+  gap: 16px;
+
+  @media screen and (min-width: $stopSlider) {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    justify-items: center;
+  }
+
+  &__item--hidden--md {
+    @media (min-width: $stopSlider) {
+      display: none !important;
+    }
+
+    @media (min-width: $screen-xl) {
+      display: none !important;
+    }
+  }
+
+  &__item--hidden--lg {
+    @media (min-width: $screen-xl) {
+      display: none !important;
+    }
+  }
+}

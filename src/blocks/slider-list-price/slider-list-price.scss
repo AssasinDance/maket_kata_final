@@ -1,0 +1,13 @@
+.slider-list-price {
+  &__titles {
+    padding: 10px 16px;
+    color: $textAlt2;
+    font-weight: 500;
+    display: none;
+
+    @media (min-width: $stopSlider) {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+    }
+  }
+}

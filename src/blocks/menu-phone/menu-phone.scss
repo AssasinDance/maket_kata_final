@@ -1,0 +1,158 @@
+.menu-phone {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  z-index: 100;
+  padding: 0;
+  box-sizing: border-box;
+  transform: translateX(140%);
+  transition: transform 0.3s ease-in-out;
+  box-shadow: -13px 0 44px 10px #444444;
+
+  @media (min-width: $screen-xs) {
+    right: 0;
+    width: 370px;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__label-submit {
+    color: $textAlt1;
+    margin-top: 8px;
+  }
+
+  &__submit {
+    background-color: $bgColorAlt1;
+    text-transform: uppercase;
+    font-family: 'TT Lakes';
+    font-weight: 900;
+    width: 140px;
+    height: auto;
+    border-radius: 100px;
+    color: #fff;
+    display: flex;
+    padding: 4px 16px;
+    align-items: center;
+    margin-top: 16px;
+    align-self: end;
+  }
+
+  &__link {
+    color: $bgColorAlt1;
+  }
+
+  &__input-number {
+    padding: 10px 10px;
+    border-radius: 8px;
+    border: solid 2px rgba($textAlt2, 0.5);
+    font-family: 'TT Lakes';
+    font-weight: 700;
+    margin: 8px 0;
+    position: relative;
+  }
+
+  &__label-phone {
+    color: $textAlt2;
+    position: absolute;
+    margin: 18px 10px;
+    user-select: none;
+    transition: 0.1s ease-in-out;
+    pointer-events: none;
+  }
+
+  &__header {
+    font-size: 22px;
+    font-weight: 900;
+    margin-top: 24px;
+    margin-bottom: 8px;
+  }
+
+  &__header:before {
+    content: '';
+    position: relative;
+    display: block;
+    height: 40px;
+    width: 5px;
+    background-color: #41f6d7;
+    background-size: cover;
+    border-radius: 0 5px 5px 0;
+    margin-left: -16px;
+    margin-top: -50px;
+    top: 35px;
+  }
+
+  &__cross {
+    background-image: url('../img/burger-cross.svg');
+    background-repeat: no-repeat;
+    flex-shrink: 0;
+    margin-top: 8px;
+
+    @media (min-width: $screen-xs) {
+      position: absolute;
+      margin-left: -80px;
+    }
+  }
+
+  &__cross--chat {
+    @media (min-width: $screen-xs) {
+      position: absolute;
+      margin-left: -65px;
+      margin-top: 15px;
+    }
+  }
+
+  &__wrapper {
+    overflow-y: scroll;
+    scrollbar-color: transparent transparent;
+    padding: 8px 16px;
+  }
+
+  &__input-number:focus + label {
+    opacity: 0;
+  }
+
+  &__input-number:valid + label {
+    opacity: 0;
+  }
+
+  &__label-phone--name {
+    position: relative;
+    margin: -10px 0;
+    top: -30px;
+    right: -10px;
+  }
+
+  &__label-phone--phone {
+    position: relative;
+    margin: -10px 0;
+    top: -30px;
+    right: -10px;
+  }
+
+  &__label-phone--email {
+    position: relative;
+    margin: -10px 0;
+    top: -30px;
+    right: -10px;
+  }
+
+  &__label-phone--text {
+    position: relative;
+    margin: -10px 0;
+    top: -160px;
+    right: -10px;
+  }
+
+  &__input-number--text {
+    height: 150px;
+    resize: none;
+    scrollbar-color: #ceced3 transparent;
+    scrollbar-width: thin;
+  }
+}

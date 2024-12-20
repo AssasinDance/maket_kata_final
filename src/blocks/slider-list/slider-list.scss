@@ -1,0 +1,15 @@
+.slider-list {
+  width: 100%;
+
+  &.grab {
+    @media (max-width: $stopSlider) {
+      cursor: grab;
+    }
+  }
+
+  &.grabbing {
+    @media (max-width: $stopSlider) {
+      cursor: grabbing;
+    }
+  }
+}

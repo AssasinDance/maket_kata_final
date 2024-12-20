@@ -1,0 +1,7 @@
+.list-of-tech {
+  @media (min-width: $stopSlider) {
+    height: 183px;
+    overflow: hidden;
+    justify-items: center;
+  }
+}

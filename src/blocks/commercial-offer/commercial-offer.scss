@@ -1,0 +1,12 @@
+.commercial-offer {
+  padding: 8px 32px;
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+
+  &__icon {
+    background-image: url('../img/more.svg');
+    height: 25px;
+    width: 20px;
+  }
+}
