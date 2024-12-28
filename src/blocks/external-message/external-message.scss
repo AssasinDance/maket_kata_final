@@ -1,4 +1,8 @@
 .external-message {
-  padding: 0 32px;
+  padding: 0 16px;
   max-width: 420px;
+
+  @media (min-width: 1119.98px) {
+    padding: 0 32px;
+  }
 }

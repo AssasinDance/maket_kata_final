@@ -1,8 +1,12 @@
 .commercial-offer {
-  padding: 8px 32px;
+  padding: 8px 16px;
   display: flex;
   align-items: center;
   font-size: 18px;
+
+  @media (min-width: 1119.98px) {
+    padding: 8px 32px;
+  }
 
   &__icon {
     background-image: url('../img/more.svg');

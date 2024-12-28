@@ -1,6 +1,6 @@
 .tech-type {
   height: 160px;
-  width: 210px;
+  width: calc(100vw - 100px);
   flex-shrink: 0;
   background-color: #ffffff;
   border-radius: 6px;
@@ -9,6 +9,26 @@
   align-content: flex-end;
   justify-content: space-between;
   padding: 10px 16px;
+
+  @media (max-width: $stopSlider) {
+    height: 180px;
+  }
+
+  @media (min-width: $stopSlider) {
+    width: calc((100vw - 130px) / 2);
+  }
+
+  @media (min-width: 750px) {
+    width: calc((100vw - 190px) / 3);
+  }
+
+  @media (min-width: 1119.98px) {
+    width: calc((100vw - 260px) / 4);
+  }
+
+  @media (min-width: 1439.98px) {
+    width: calc((1440px - 600px) / 4);
+  }
 
   &__logo {
     max-width: 50%;

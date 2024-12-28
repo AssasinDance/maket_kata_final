@@ -1,5 +1,7 @@
 .wrapper {
   @media (min-width: $screen-lg) {
-    width: calc(100vw - 345px);
+    width: calc(1440px - 345px);
+    margin-left: calc((100vw - 1440px) / 2);
+    margin-right: calc((100vw - 1440px) / 2);
   }
 }

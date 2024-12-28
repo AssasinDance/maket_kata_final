@@ -7,7 +7,22 @@
 
     @media (min-width: $stopSlider) {
       display: grid;
-      grid-template-columns: 2fr 1fr 1fr 1fr;
+      width: calc(100% - 32px);
+      grid-template-columns: 3fr 2fr 2fr 2fr;
+    }
+
+    @media (min-width: 800px) {
+      grid-template-columns: 3fr 1fr 1fr 1fr;
+    }
+
+    @media (min-width: 1120px) {
+      grid-template-columns: 9fr 2fr 2fr 2fr;
+    }
+  }
+
+  &__title:nth-child(2) {
+    @media (min-width: 800px) {
+      margin-left: -7px;
     }
   }
 }

@@ -1,7 +1,7 @@
 .footer {
   border-top: solid 1px #b8ffec;
   margin-top: 25px;
-  padding: 16px 24px;
+  padding: 16px 16px;
   color: $textAlt2;
   display: flex;
   flex-direction: column;
@@ -12,6 +12,11 @@
   @media (min-width: $stopSlider) {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    padding: 32px 16px;
+  }
+
+  @media (min-width: 1119.98px) {
+    padding: 32px;
   }
 
   &__develop-info {
@@ -20,14 +25,26 @@
     align-items: center;
 
     @media (min-width: $stopSlider) {
-      text-align: start;
+      align-self: start;
       align-items: start;
+    }
+  }
+
+  &__developer {
+    @media (min-width: $stopSlider) {
+      text-align: start;
     }
   }
 
   &__policy {
     color: $textAlt2;
     text-decoration: underline;
+    align-self: center;
+    justify-self: center;
+
+    @media (min-width: $stopSlider) {
+      align-self: start;
+    }
   }
 
   &__public-offer {

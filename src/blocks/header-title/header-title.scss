@@ -1,9 +1,13 @@
 .header-title {
-  padding: 16px 24px;
+  padding: 16px 16px;
   text-transform: uppercase;
   background: linear-gradient(to right, #f8f8f8, #ffffff);
   border-top: solid 1px #b8ffec;
   margin-top: 25px;
   color: $textAlt1;
   font-weight: 700;
+
+  @media (min-width: 1119.98px) {
+    padding: 16px 30px;
+  }
 }

@@ -239,11 +239,11 @@ const sliderBrands = (
     }
 
   sliderTrack.style.transform = 'translate3d(0px, 0px, 0px)'
-  if (window.innerWidth >= stopSliderWidth) {
+  /*if (window.innerWidth >= stopSliderWidth) {
     slides[0].style.marginLeft = '0px'
   } else {
     slides[0].style.marginLeft = `${(window.innerWidth - 320) / 2.1}px`
-  }
+  }*/
   sliderList.classList.add('grab')
 
   sliderTrack.addEventListener('transitionend', () => (allowSwipe = true))
@@ -254,10 +254,10 @@ const sliderBrands = (
     if (window.innerWidth >= stopSliderWidth) {
       sliderTrack.style.transition = 'transform 0s'
       sliderTrack.style.transform = 'translate3d(0px, 0px, 0px)'
-      slides[0].style.marginLeft = '0px'
-    } else {
+      //slides[0].style.marginLeft = '0px'
+    } /*else {
       slides[0].style.marginLeft = `${(window.innerWidth - 320) / 2.1}px`
-    }
+    }*/
   })
 }
 
@@ -267,7 +267,7 @@ sliderBrands(
   '.list-of-brands',
   '.brand',
   '.circle-list',
-  260
+  window.innerWidth - 50
 )
 
 sliderBrands(
@@ -276,7 +276,7 @@ sliderBrands(
   '.list-of-tech',
   '.tech-type',
   '.circle-list-tech',
-  260
+  window.innerWidth - 50
 )
 
 sliderBrands(
@@ -285,5 +285,5 @@ sliderBrands(
   '.list-of-price',
   '.price',
   '.circle-list-price',
-  260
+  window.innerWidth - 50
 )

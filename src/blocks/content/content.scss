@@ -8,10 +8,10 @@
     align-self: flex-start;
     padding-bottom: 20px;
     margin-bottom: -20px;
-    margin-left: -20px;
+    margin-left: -50px;
 
     @media (min-width: 1120px) {
-      margin-left: 30px;
+      margin-left: -20px;
     }
   }
 
@@ -19,12 +19,16 @@
     align-self: flex-start;
     font-size: 16px;
     font-family: 'TT Lakes Bold';
-    padding: 5px;
+    padding: 0;
     margin: 15px;
     line-height: 40px;
 
+    @media (min-width: 1119.98px) {
+      padding-left: 16px;
+    }
+
     @media (min-width: $screen-lg) {
-      width: calc(100vw - 400px);
+      width: calc(1440px - 400px);
     }
   }
 
@@ -37,8 +41,16 @@
     background-color: #41f6d7;
     background-size: cover;
     border-radius: 0 5px 5px 0;
-    margin-left: -20px;
+    margin-left: -15px;
     margin-top: 23px;
+
+    @media (min-width: 1119.98px) {
+      margin-left: -31px;
+    }
+
+    @media (min-width: 1439.98px) {
+      border-radius: 5px;
+    }
   }
 
   &__pages::after {
