@@ -869,7 +869,8 @@ a {
     justify-self: center; }
     @media (min-width: 554.98px) {
       .footer__policy {
-        align-self: start; } }
+        align-self: start;
+        justify-self: start; } }
   @media (min-width: 554.98px) {
     .footer__public-offer {
       text-align: end; } }
