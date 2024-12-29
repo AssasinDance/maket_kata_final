@@ -1,7 +1,7 @@
 .pages {
   display: flex;
   width: calc(100vw - 20px);
-  gap: 15px;
+  gap: 5px;
   list-style: none;
   scrollbar-color: transparent transparent;
 
@@ -22,7 +22,9 @@
 
   &__link {
     display: block;
-    padding: 5px;
+    padding: 8px 16px;
+    color: $textAlt1;
+    font-weight: 700;
   }
 
   &__item:last-child {

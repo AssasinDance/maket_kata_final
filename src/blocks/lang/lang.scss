@@ -3,19 +3,21 @@
   gap: 10px;
   margin-top: 32px;
 
+  &__option {
+    font-weight: 700;
+    font-family: 'TT Lakes';
+    font-size: 18px;
+  }
+
+  &__option:hover {
+    text-decoration: underline;
+  }
+
   &--current {
     color: #7e7e82;
   }
 
   &--current:hover {
     text-decoration: none;
-  }
-
-  &__option {
-    font-family: 'TT Lakes Medium';
-  }
-
-  &__option:hover {
-    text-decoration: underline;
   }
 }

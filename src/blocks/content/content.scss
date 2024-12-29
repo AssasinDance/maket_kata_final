@@ -13,12 +13,15 @@
     @media (min-width: 1120px) {
       margin-left: -20px;
     }
+
+    @media (min-width: 1439.98px) {
+      margin-left: -10px;
+    }
   }
 
   &__title {
     align-self: flex-start;
     font-size: 16px;
-    font-family: 'TT Lakes Bold';
     padding: 0;
     margin: 15px;
     line-height: 40px;
@@ -51,6 +54,10 @@
     @media (min-width: 1439.98px) {
       border-radius: 5px;
     }
+  }
+
+  &__title-text {
+    font-weight: 900;
   }
 
   &__pages::after {
